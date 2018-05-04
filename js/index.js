@@ -1,3 +1,4 @@
+(function(){
 let n;
 do {
     alert('Please enter number');
@@ -6,10 +7,11 @@ do {
 document.write('Your number:' + n + '<br>');
 
 function fibon(n) {
-    if (n == 0)
+    if (n == 0){
         return 0;
-    else if (n == 1 || n == 2)
+    }else if (n == 1 || n == 2){
         return 1;
+    }
     let fib1 = 1,
         fib2 = 1,
         fib3;
@@ -29,8 +31,9 @@ function fib(n) {
 }
 document.write('Fibonacci number:' + fib(n) + '<br>');
 
-let fibArr = [1, 1];
+
 function fibonacci(n) {
+    let fibArr = [1, 1];
     if (n == 0)
         return 0;
     else if (n == 1 || n == 2)
@@ -41,3 +44,4 @@ function fibonacci(n) {
     return fibArr[n-1];
 }
 document.write('Fibonacci number:' + fibonacci(n));
+});
